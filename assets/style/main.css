@@ -11,8 +11,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
@@ -20,7 +18,7 @@ body {
   grid-area: 1/1/5/2;
   border: 2px solid red;
 }
-.main__containerExercice {
+.main__containerExercise {
   grid-area: 3/2/5/3;
   border: 2px solid red;
 }
