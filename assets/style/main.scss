@@ -1,0 +1,48 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  &__containerInfos {
+    grid-area: 1 / 1 / 5 / 2;
+    border: 2px solid red;
+  }
+  &__containerExercice {
+    grid-area: 3 / 2 / 5 / 3;
+    border: 2px solid red;
+  }
+  &__containerWork {
+    grid-area: 1 / 2 / 3 / 3;
+    border: 2px solid red;
+  }
+  &__containerSocial {
+    grid-area: 3 / 3 / 5 / 4;
+    border: 2px solid red;
+  }
+  &__containerPlay {
+    grid-area: 1 / 3 / 3 / 4;
+    border: 2px solid red;
+  }
+  &__containerSelfcare {
+    grid-area: 3 / 4 / 5 / 5;
+    border: 2px solid red;
+  }
+  &__containerStudy {
+    grid-area: 1 / 4 / 3 / 5;
+    border: 2px solid red;
+  }
+}
