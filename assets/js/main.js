@@ -46,13 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".main__infosHeader").forEach((element) => {
       element.addEventListener("click", () => {
         if (element.classList.contains("day")) {
-          console.log("day");
           loadDayData();
         } else if (element.classList.contains("week")) {
-          console.log("week");
           loadWeekData();
         } else if (element.classList.contains("month")) {
-          console.log("month");
+          loadMonthData();
         }
       });
     });
@@ -112,7 +110,34 @@ document.addEventListener("DOMContentLoaded", () => {
       previousHoursSelfcare.innerHTML =
         "Yesterday - " + `${data[5].timeframes.weekly.previous}` + " hrs";
     }
-  }
 
+    function loadMonthData() {
+      currentHoursWork.innerHTML =
+        `${data[0].timeframes.monthly.current}` + "hrs";
+      currentHoursPlay.innerHTML =
+        `${data[1].timeframes.monthly.current}` + "hrs";
+      currentHoursStudy.innerHTML =
+        `${data[2].timeframes.monthly.current}` + "hrs";
+      currentHoursExercise.innerHTML =
+        `${data[3].timeframes.monthly.current}` + "hrs";
+      currentHoursSocial.innerHTML =
+        `${data[4].timeframes.monthly.current}` + "hrs";
+      currentHoursSelfcare.innerHTML =
+        `${data[5].timeframes.monthly.current}` + "hrs";
+
+      previousHoursWork.innerHTML =
+        "Yesterday - " + `${data[0].timeframes.monthly.previous}` + " hrs";
+      previousHoursPlay.innerHTML =
+        "Yesterday - " + `${data[1].timeframes.monthly.previous}` + " hrs";
+      previousHoursStudy.innerHTML =
+        "Yesterday - " + `${data[2].timeframes.monthly.previous}` + " hrs";
+      previousHoursExercise.innerHTML =
+        "Yesterday - " + `${data[3].timeframes.monthly.previous}` + " hrs";
+      previousHoursSocial.innerHTML =
+        "Yesterday - " + `${data[4].timeframes.monthly.previous}` + " hrs";
+      previousHoursSelfcare.innerHTML =
+        "Yesterday - " + `${data[5].timeframes.monthly.previous}` + " hrs";
+    }
+  }
   loadObjJson();
 });
