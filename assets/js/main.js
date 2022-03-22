@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // function async to get data from the json file
-  async function loadData() {
+  async function loadObjJson() {
     const response = await fetch("./assets/js/data.json");
     const data = await response.json();
     console.log(data);
@@ -13,19 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const playTitle = document.getElementById("play");
     const socialTitle = document.getElementById("social");
     const currentHoursWork = document.getElementById("currentHoursWork");
-    const currentHourPlay = document.getElementById("currentHoursPlay");
-    const currentHourSelcare = document.getElementById("currentHoursSelfcare");
-    const currentHourSocial = document.getElementById("currentHoursSocial");
-    const currentHourStudy = document.getElementById("currentHoursStudy");
-    const currentHourExercise = document.getElementById("currentHoursExercise");
+    const currentHoursPlay = document.getElementById("currentHoursPlay");
+    const currentHoursSelfcare = document.getElementById(
+      "currentHoursSelfcare"
+    );
+    const currentHoursSocial = document.getElementById("currentHoursSocial");
+    const currentHoursStudy = document.getElementById("currentHoursStudy");
+    const currentHoursExercise = document.getElementById(
+      "currentHoursExercise"
+    );
     const previousHoursWork = document.getElementById("previousHoursWork");
-    const previousHourPlay = document.getElementById("previousHoursPlay");
-    const previousHourSelcare = document.getElementById(
+    const previousHoursPlay = document.getElementById("previousHoursPlay");
+    const previousHoursSelfcare = document.getElementById(
       "previousHoursSelfcare"
     );
-    const previousHourSocial = document.getElementById("previousHoursSocial");
-    const previousHourStudy = document.getElementById("previousHoursStudy");
-    const previousHourExercise = document.getElementById(
+    const previousHoursSocial = document.getElementById("previousHoursSocial");
+    const previousHoursStudy = document.getElementById("previousHoursStudy");
+    const previousHoursExercise = document.getElementById(
       "previousHoursExercise"
     );
 
@@ -53,10 +57,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function loadDayData() {
-      currentHoursWork.innerText = data[1].timeframes.daily.current;
+      currentHoursWork.innerHTML =
+        `${data[0].timeframes.daily.current}` + "hrs";
+      currentHoursPlay.innerHTML =
+        `${data[1].timeframes.daily.current}` + "hrs";
+      currentHoursStudy.innerHTML =
+        `${data[2].timeframes.daily.current}` + "hrs";
+      currentHoursExercise.innerHTML =
+        `${data[3].timeframes.daily.current}` + "hrs";
+      currentHoursSocial.innerHTML =
+        `${data[4].timeframes.daily.current}` + "hrs";
+      currentHoursSelfcare.innerHTML =
+        `${data[5].timeframes.daily.current}` + "hrs";
+
+      previousHoursWork.innerHTML =
+        "Yesterday - " + `${data[0].timeframes.daily.previous}` + " hrs";
+      previousHoursPlay.innerHTML =
+        "Yesterday - " + `${data[1].timeframes.daily.previous}` + " hrs";
+      previousHoursStudy.innerHTML =
+        "Yesterday - " + `${data[2].timeframes.daily.previous}` + " hrs";
+      previousHoursExercise.innerHTML =
+        "Yesterday - " + `${data[3].timeframes.daily.previous}` + " hrs";
+      previousHoursSocial.innerHTML =
+        "Yesterday - " + `${data[4].timeframes.daily.previous}` + " hrs";
+      previousHoursSelfcare.innerHTML =
+        "Yesterday - " + `${data[5].timeframes.daily.previous}` + " hrs";
     }
     loadDayData();
   }
 
-  loadData();
+  loadObjJson();
 });
