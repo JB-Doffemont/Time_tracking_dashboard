@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
           loadDayData();
         } else if (element.classList.contains("week")) {
           console.log("week");
+          loadWeekData();
         } else if (element.classList.contains("month")) {
           console.log("month");
         }
@@ -83,7 +84,34 @@ document.addEventListener("DOMContentLoaded", () => {
       previousHoursSelfcare.innerHTML =
         "Yesterday - " + `${data[5].timeframes.daily.previous}` + " hrs";
     }
-    loadDayData();
+
+    function loadWeekData() {
+      currentHoursWork.innerHTML =
+        `${data[0].timeframes.weekly.current}` + "hrs";
+      currentHoursPlay.innerHTML =
+        `${data[1].timeframes.weekly.current}` + "hrs";
+      currentHoursStudy.innerHTML =
+        `${data[2].timeframes.weekly.current}` + "hrs";
+      currentHoursExercise.innerHTML =
+        `${data[3].timeframes.weekly.current}` + "hrs";
+      currentHoursSocial.innerHTML =
+        `${data[4].timeframes.weekly.current}` + "hrs";
+      currentHoursSelfcare.innerHTML =
+        `${data[5].timeframes.weekly.current}` + "hrs";
+
+      previousHoursWork.innerHTML =
+        "Yesterday - " + `${data[0].timeframes.weekly.previous}` + " hrs";
+      previousHoursPlay.innerHTML =
+        "Yesterday - " + `${data[1].timeframes.weekly.previous}` + " hrs";
+      previousHoursStudy.innerHTML =
+        "Yesterday - " + `${data[2].timeframes.weekly.previous}` + " hrs";
+      previousHoursExercise.innerHTML =
+        "Yesterday - " + `${data[3].timeframes.weekly.previous}` + " hrs";
+      previousHoursSocial.innerHTML =
+        "Yesterday - " + `${data[4].timeframes.weekly.previous}` + " hrs";
+      previousHoursSelfcare.innerHTML =
+        "Yesterday - " + `${data[5].timeframes.weekly.previous}` + " hrs";
+    }
   }
 
   loadObjJson();
