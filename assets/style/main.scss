@@ -1,3 +1,5 @@
+@import "./import/variables.scss";
+
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -8,18 +10,83 @@ body {
 }
 
 .main {
+  background-color: $veryDarkBlue;
+  min-width: 23.4rem;
   &__container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 23.4rem;
+    margin: auto;
+    padding-top: 5rem;
+    // display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }
+
+  /**
+  * Infos part
+  */
+
   &__containerInfos {
     grid-area: 1 / 1 / 5 / 2;
-    border: 2px solid red;
+    background-color: $darkBlue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    width: 80%;
   }
-  &__containerExercice {
+
+  &__infosFirstPart {
+    display: flex;
+    margin: auto;
+    height: 7rem;
+    border-radius: 10px;
+    background-color: $Blue;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    color: $paleBlue;
+  }
+
+  .report {
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  &__infosImg {
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 8rem;
+      border: solid 3px white;
+    }
+  }
+
+  &__infosSecondPart {
+    color: $desaturatedBlue;
+  }
+
+  &__infosPeriod {
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    width: 80%;
+
+    h3 {
+      font-weight: 300;
+    }
+  }
+
+  /**
+  * Exercise part
+  */
+
+  &__containerExercise {
     grid-area: 3 / 2 / 5 / 3;
     border: 2px solid red;
   }
