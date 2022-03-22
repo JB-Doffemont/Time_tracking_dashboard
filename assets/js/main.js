@@ -12,13 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const selfcareTitle = document.getElementById("selfcare");
     const playTitle = document.getElementById("play");
     const socialTitle = document.getElementById("social");
-    const currentHourswork = document.getElementById("currentHoursWork");
+    const currentHoursWork = document.getElementById("currentHoursWork");
     const currentHourPlay = document.getElementById("currentHoursPlay");
     const currentHourSelcare = document.getElementById("currentHoursSelfcare");
     const currentHourSocial = document.getElementById("currentHoursSocial");
     const currentHourStudy = document.getElementById("currentHoursStudy");
     const currentHourExercise = document.getElementById("currentHoursExercise");
-    const previousHours = document.getElementsByClassName("main__hoursPast");
+    const previousHoursWork = document.getElementById("previousHoursWork");
+    const previousHourPlay = document.getElementById("previousHoursPlay");
+    const previousHourSelcare = document.getElementById(
+      "previousHoursSelfcare"
+    );
+    const previousHourSocial = document.getElementById("previousHoursSocial");
+    const previousHourStudy = document.getElementById("previousHoursStudy");
+    const previousHourExercise = document.getElementById(
+      "previousHoursExercise"
+    );
 
     function displayTitle() {
       workTitle.innerHTML = data[0].title;
