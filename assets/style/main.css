@@ -16,23 +16,19 @@ body {
   /**
   * Infos part
   */
-  /**
-  * Exercise part
-  */
 }
 .main__container {
-  display: flex;
-  flex-direction: column;
   width: 23.4rem;
   margin: auto;
   padding-top: 5rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
 }
 .main__containerInfos {
-  grid-area: 1/1/5/2;
+  grid-area: 2/1/6/2;
   background-color: #1c1f4a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -74,29 +70,49 @@ body {
 .main__infosPeriod h3 {
   font-weight: 300;
 }
-.main__containerExercise {
-  grid-area: 3/2/5/3;
-  border: 2px solid red;
-}
-.main__containerWork {
-  grid-area: 1/2/3/3;
-  border: 2px solid red;
-}
-.main__containerSocial {
-  grid-area: 3/3/5/4;
-  border: 2px solid red;
-}
-.main__containerPlay {
-  grid-area: 1/3/3/4;
-  border: 2px solid red;
-}
-.main__containerSelfcare {
-  grid-area: 3/4/5/5;
-  border: 2px solid red;
-}
-.main__containerStudy {
-  grid-area: 1/4/3/5;
-  border: 2px solid red;
+
+@media only screen and (min-width: 1300px) {
+  .main {
+    /**
+    * Exercise part
+    */
+  }
+  .main__container {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .main__containerInfos {
+    grid-area: 2/1/6/2;
+    border: 2px solid red;
+  }
+  .main__containerExercise {
+    grid-area: 4/2/6/3;
+    border: 2px solid red;
+  }
+  .main__containerWork {
+    grid-area: 2/2/4/3;
+    border: 2px solid red;
+  }
+  .main__containerSocial {
+    grid-area: 4/3/6/4;
+    border: 2px solid red;
+  }
+  .main__containerPlay {
+    grid-area: 2/3/4/4;
+    border: 2px solid red;
+  }
+  .main__containerSelfcare {
+    grid-area: 4/4/6/5;
+    border: 2px solid red;
+  }
+  .main__containerStudy {
+    grid-area: 2/4/4/5;
+    border: 2px solid red;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
