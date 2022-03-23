@@ -20,7 +20,37 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
+
+    .main__card {
+      background-color: $darkBlue;
+      height: 8rem;
+      border-radius: 10px;
+      color: $desaturatedBlue;
+      padding: 0 2rem;
+      margin-top: 3rem;
+
+      .main__title {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 16px;
+        align-items: center;
+        padding-top: 1rem;
+      }
+
+      .main__hours {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .main__hoursCurrent {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
   }
 
   /**
@@ -33,13 +63,13 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: auto;
-    width: 80%;
+    width: 20rem;
   }
 
   &__infosFirstPart {
     display: flex;
     margin: auto;
-    height: 7rem;
+    height: 8rem;
     border-radius: 10px;
     background-color: $Blue;
     justify-content: center;
@@ -80,9 +110,18 @@ body {
     }
   }
 
+  /**
+  * Work part
+  */
+
   &__containerWork {
     grid-area: 2 / 3 / 3 / 4;
-    border: 2px solid red;
+    background-color: $lightOrange;
+    background-image: url("/assets/images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14rem;
+    height: 11rem;
+    border-radius: 10px;
   }
 
   &__containerPlay {

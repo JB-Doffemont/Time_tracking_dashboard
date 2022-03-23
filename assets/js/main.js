@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     function displayTitle() {
-      workTitle.innerHTML = data[0].title;
+      workTitle.innerHTML = "<p>" + `${data[0].title}` + "</p>";
       playTitle.innerHTML = data[1].title;
       studyTitle.innerHTML = data[2].title;
       exerciseTitle.innerHTML = data[3].title;
