@@ -19,6 +19,9 @@ body {
   /**
   * Work part
   */
+  /**
+  * Play part
+  */
 }
 .main__container {
   width: 23.4rem;
@@ -110,7 +113,12 @@ body {
 }
 .main__containerPlay {
   grid-area: 3/3/4/4;
-  border: 2px solid red;
+  background-color: #56c2e6;
+  background-image: url("/assets/images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position-x: 14rem;
+  height: 11rem;
+  border-radius: 10px;
 }
 .main__containerStudy {
   grid-area: 4/3/5/4;

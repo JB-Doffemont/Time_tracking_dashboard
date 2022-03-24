@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayTitle() {
       workTitle.innerHTML = "<p>" + `${data[0].title}` + "</p>";
-      playTitle.innerHTML = data[1].title;
-      studyTitle.innerHTML = data[2].title;
-      exerciseTitle.innerHTML = data[3].title;
-      socialTitle.innerHTML = data[4].title;
-      selfcareTitle.innerHTML = data[5].title;
+      playTitle.innerHTML = "<p>" + `${data[1].title}` + "</p>";
+      studyTitle.innerHTML = "<p>" + `${data[2].title}` + "</p>";
+      exerciseTitle.innerHTML = "<p>" + `${data[3].title}` + "</p>";
+      socialTitle.innerHTML = "<p>" + `${data[4].title}` + "</p>";
+      selfcareTitle.innerHTML = "<p>" + `${data[5].title}` + "</p>";
     }
     displayTitle();
     // Get data on click depending on period
