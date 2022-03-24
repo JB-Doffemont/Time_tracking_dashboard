@@ -140,22 +140,42 @@ body {
 
   &__containerStudy {
     grid-area: 4 / 3 / 5 / 4;
-    border: 2px solid red;
+    background-color: $lightRed;
+    background-image: url("/assets/images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14rem;
+    height: 11rem;
+    border-radius: 10px;
   }
 
   &__containerExercise {
     grid-area: 5 / 3 / 6 / 4;
-    border: 2px solid red;
+    background-color: $limeGreen;
+    background-image: url("/assets/images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14rem;
+    height: 11rem;
+    border-radius: 10px;
   }
 
   &__containerSocial {
     grid-area: 6 / 3 / 7 / 4;
-    border: 2px solid red;
+    background-color: $violet;
+    background-image: url("/assets/images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14rem;
+    height: 11rem;
+    border-radius: 10px;
   }
 
   &__containerSelfcare {
     grid-area: 7 / 3 / 8 / 4;
-    border: 2px solid red;
+    background-color: $softOrange;
+    background-image: url("/assets/images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position-x: 14rem;
+    height: 11rem;
+    border-radius: 10px;
   }
 }
 
