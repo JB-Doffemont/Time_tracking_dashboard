@@ -45,11 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get data on click depending on period
     document.querySelectorAll(".main__infosHeader").forEach((element) => {
       element.addEventListener("click", () => {
+        const activeEl = document.getElementsByClassName("active");
+        // loop to remove active class of elements
+        for (const activeEls of activeEl) {
+          activeEls.classList.remove("active");
+        }
         if (element.classList.contains("day")) {
+          element.classList.add("active");
           loadDayData();
         } else if (element.classList.contains("week")) {
+          element.classList.add("active");
           loadWeekData();
         } else if (element.classList.contains("month")) {
+          element.classList.add("active");
           loadMonthData();
         }
       });
