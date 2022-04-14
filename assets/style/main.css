@@ -89,7 +89,6 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  color: #bdc1ff;
 }
 .main__infosHeader {
   cursor: pointer;
@@ -99,10 +98,13 @@ body {
 }
 .main .report {
   font-size: 10px;
+  color: #6f76c8;
 }
 .main .name {
   font-size: 20px;
   display: flex;
+  gap: 0.5rem;
+  color: #bdc1ff;
 }
 .main__infosImg img {
   width: 4rem;
@@ -117,7 +119,7 @@ body {
   justify-content: space-around;
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 .main__infosPeriod h3 {
   font-weight: 300;
@@ -206,15 +208,27 @@ body {
   }
   .main__containerInfos {
     grid-area: 2/1/6/2;
-    height: 30rem;
+    height: 27rem;
     width: 15rem;
   }
   .main__containerInfos .main__infosFirstPart {
-    height: 20rem;
+    height: 18rem;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .main__containerInfos .main__infosFirstPart .main__infosName {
+    height: 9rem;
+  }
+  .main__containerInfos .main__infosFirstPart .main__infosName .report {
+    font-size: 14px;
   }
   .main__containerInfos .main__infosFirstPart .main__infosName .name {
     flex-direction: column;
+    font-size: 35px;
+    gap: 0;
   }
   .main__containerExercise {
     grid-area: 4/2/6/3;
