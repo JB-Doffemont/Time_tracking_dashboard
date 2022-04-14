@@ -102,6 +102,7 @@ body {
 }
 .main .name {
   font-size: 20px;
+  display: flex;
 }
 .main__infosImg img {
   width: 4rem;
@@ -185,44 +186,53 @@ body {
 @media only screen and (min-width: 1300px) {
   .main {
     /**
+    * Infos part
+    */
+    /**
     * Exercise part
     */
   }
   .main__container {
+    width: 70rem;
     padding-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .main__container .main__card {
+    height: 11rem;
   }
   .main__containerInfos {
     grid-area: 2/1/6/2;
-    border: 2px solid red;
+    height: 30rem;
+    width: 15rem;
+  }
+  .main__containerInfos .main__infosFirstPart {
+    height: 20rem;
+    flex-direction: column;
+  }
+  .main__containerInfos .main__infosFirstPart .main__infosName .name {
+    flex-direction: column;
   }
   .main__containerExercise {
     grid-area: 4/2/6/3;
-    border: 2px solid red;
   }
   .main__containerWork {
     grid-area: 2/2/4/3;
-    border: 2px solid red;
   }
   .main__containerSocial {
     grid-area: 4/3/6/4;
-    border: 2px solid red;
   }
   .main__containerPlay {
     grid-area: 2/3/4/4;
-    border: 2px solid red;
   }
   .main__containerSelfcare {
     grid-area: 4/4/6/5;
-    border: 2px solid red;
   }
   .main__containerStudy {
     grid-area: 2/4/4/5;
-    border: 2px solid red;
   }
 }
 
