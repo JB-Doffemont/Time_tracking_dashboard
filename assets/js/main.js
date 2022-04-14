@@ -106,17 +106,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `${data[5].timeframes.weekly.current}` + "hrs";
 
       previousHoursWork.innerHTML =
-        "Yesterday - " + `${data[0].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[0].timeframes.weekly.previous}` + " hrs";
       previousHoursPlay.innerHTML =
-        "Yesterday - " + `${data[1].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[1].timeframes.weekly.previous}` + " hrs";
       previousHoursStudy.innerHTML =
-        "Yesterday - " + `${data[2].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[2].timeframes.weekly.previous}` + " hrs";
       previousHoursExercise.innerHTML =
-        "Yesterday - " + `${data[3].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[3].timeframes.weekly.previous}` + " hrs";
       previousHoursSocial.innerHTML =
-        "Yesterday - " + `${data[4].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[4].timeframes.weekly.previous}` + " hrs";
       previousHoursSelfcare.innerHTML =
-        "Yesterday - " + `${data[5].timeframes.weekly.previous}` + " hrs";
+        "Last Week - " + `${data[5].timeframes.weekly.previous}` + " hrs";
     }
 
     function loadMonthData() {
@@ -134,17 +134,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `${data[5].timeframes.monthly.current}` + "hrs";
 
       previousHoursWork.innerHTML =
-        "Yesterday - " + `${data[0].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[0].timeframes.monthly.previous}` + " hrs";
       previousHoursPlay.innerHTML =
-        "Yesterday - " + `${data[1].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[1].timeframes.monthly.previous}` + " hrs";
       previousHoursStudy.innerHTML =
-        "Yesterday - " + `${data[2].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[2].timeframes.monthly.previous}` + " hrs";
       previousHoursExercise.innerHTML =
-        "Yesterday - " + `${data[3].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[3].timeframes.monthly.previous}` + " hrs";
       previousHoursSocial.innerHTML =
-        "Yesterday - " + `${data[4].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[4].timeframes.monthly.previous}` + " hrs";
       previousHoursSelfcare.innerHTML =
-        "Yesterday - " + `${data[5].timeframes.monthly.previous}` + " hrs";
+        "Last Month - " + `${data[5].timeframes.monthly.previous}` + " hrs";
     }
   }
   loadObjJson();
