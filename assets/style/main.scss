@@ -233,7 +233,7 @@ body {
 
     &__containerInfos {
       grid-area: 2 / 1 / 6 / 2;
-      height: 27rem;
+      height: 28.5rem;
       width: 15rem;
 
       .main__infosFirstPart {
@@ -259,6 +259,16 @@ body {
           }
         }
       }
+
+      .main__infosSecondPart {
+        padding-left: 2rem;
+
+        .main__infosPeriod {
+          display: contents;
+        }
+      }
+
+     
     }
 
     /**

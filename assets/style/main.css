@@ -208,7 +208,7 @@ body {
   }
   .main__containerInfos {
     grid-area: 2/1/6/2;
-    height: 27rem;
+    height: 28.5rem;
     width: 15rem;
   }
   .main__containerInfos .main__infosFirstPart {
@@ -229,6 +229,12 @@ body {
     flex-direction: column;
     font-size: 35px;
     gap: 0;
+  }
+  .main__containerInfos .main__infosSecondPart {
+    padding-left: 2rem;
+  }
+  .main__containerInfos .main__infosSecondPart .main__infosPeriod {
+    display: contents;
   }
   .main__containerExercise {
     grid-area: 4/2/6/3;
