@@ -205,6 +205,7 @@ body {
   }
   .main__container .main__card {
     height: 11rem;
+    height: 10.7rem;
   }
   .main__container .main__card .main__hours {
     flex-direction: column;

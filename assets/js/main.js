@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
       selfcareTitle.innerHTML = "<p>" + `${data[5].title}` + "</p>";
     }
     displayTitle();
+
+    // Display day data by default
+    loadDayData();
     // Get data on click depending on period
     document.querySelectorAll(".main__infosHeader").forEach((element) => {
       element.addEventListener("click", () => {
