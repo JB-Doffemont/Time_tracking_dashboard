@@ -224,6 +224,20 @@ body {
 
       .main__card {
         height: 11rem;
+
+        .main__hours {
+          flex-direction: column;
+          align-items: baseline;
+
+          .main__hoursCurrent {
+            font-size: 50px;
+            
+          }
+
+          .main__hoursPast {
+            color: $desaturatedBlue;
+          }
+        }
       }
     }
 
@@ -277,26 +291,38 @@ body {
 
     &__containerExercise {
       grid-area: 4 / 2 / 6 / 3;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
      
     }
     &__containerWork {
       grid-area: 2 / 2 / 4 / 3;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
       
     }
     &__containerSocial {
       grid-area: 4 / 3 / 6 / 4;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
       
     }
     &__containerPlay {
       grid-area: 2 / 3 / 4 / 4;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
       
     }
     &__containerSelfcare {
       grid-area: 4 / 4 / 6 / 5;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
     
     }
     &__containerStudy {
       grid-area: 2 / 4 / 4 / 5;
+      background-position-x: 11rem;
+      background-position-y: 0rem;
       
     }
   }

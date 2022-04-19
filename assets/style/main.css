@@ -206,6 +206,16 @@ body {
   .main__container .main__card {
     height: 11rem;
   }
+  .main__container .main__card .main__hours {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .main__container .main__card .main__hours .main__hoursCurrent {
+    font-size: 50px;
+  }
+  .main__container .main__card .main__hours .main__hoursPast {
+    color: #6f76c8;
+  }
   .main__containerInfos {
     grid-area: 2/1/6/2;
     height: 28.5rem;
@@ -238,21 +248,33 @@ body {
   }
   .main__containerExercise {
     grid-area: 4/2/6/3;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
   .main__containerWork {
     grid-area: 2/2/4/3;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
   .main__containerSocial {
     grid-area: 4/3/6/4;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
   .main__containerPlay {
     grid-area: 2/3/4/4;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
   .main__containerSelfcare {
     grid-area: 4/4/6/5;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
   .main__containerStudy {
     grid-area: 2/4/4/5;
+    background-position-x: 11rem;
+    background-position-y: 0rem;
   }
 }
 
