@@ -50,7 +50,7 @@ body {
         align-items: center;
       }
 
-      .main__hoursCurrent {
+      .currentHours {
         color: white;
         font-size: 25px;
         font-weight: 300;
@@ -230,12 +230,12 @@ body {
           flex-direction: column;
           align-items: baseline;
 
-          .main__hoursCurrent {
+          .currentHours {
             font-size: 50px;
             
           }
 
-          .main__hoursPast {
+          .previousHours {
             color: $desaturatedBlue;
           }
         }

@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main__container .main__card .main__hoursCurrent {
+.main__container .main__card .currentHours {
   color: white;
   font-size: 25px;
   font-weight: 300;
@@ -211,10 +211,10 @@ body {
     flex-direction: column;
     align-items: baseline;
   }
-  .main__container .main__card .main__hours .main__hoursCurrent {
+  .main__container .main__card .main__hours .currentHours {
     font-size: 50px;
   }
-  .main__container .main__card .main__hours .main__hoursPast {
+  .main__container .main__card .main__hours .previousHours {
     color: #6f76c8;
   }
   .main__containerInfos {

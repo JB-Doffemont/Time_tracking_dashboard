@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const { daily } = data[i].timeframes;
 
       currentHours[i].innerHTML = `${daily.current}` + "hrs";
-      previousHours[i].innerHTML = `${daily.previous}` + "hrs";
+      previousHours[i].innerHTML = "Yesterday - " + `${daily.previous}` + "hrs";
     }
   }
 
@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       const { weekly } = data[i].timeframes;
 
       currentHours[i].innerHTML = `${weekly.current}` + "hrs";
-      previousHours[i].innerHTML = `${weekly.previous}` + "hrs";
+      previousHours[i].innerHTML =
+        "Last Week - " + `${weekly.previous}` + "hrs";
     }
   }
 
@@ -62,7 +63,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       const { monthly } = data[i].timeframes;
 
       currentHours[i].innerHTML = `${monthly.current}` + "hrs";
-      previousHours[i].innerHTML = `${monthly.previous}` + "hrs";
+      previousHours[i].innerHTML =
+        "Last Month - " + `${monthly.previous}` + "hrs";
     }
   }
 });
