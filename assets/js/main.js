@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  // function async to get data from the json file
-
+  //  get data from the json file
   const response = await fetch("./assets/js/data.json");
   const data = await response.json();
   console.log(data);
 
   // Call elements from the DOM
-  const exerciseTitle = document.getElementById("exercise");
-  const workTitle = document.getElementById("work");
+  const titles = document.querySelectorAll(".title");
   const studyTitle = document.getElementById("study");
   const selfcareTitle = document.getElementById("selfcare");
   const playTitle = document.getElementById("play");
@@ -30,12 +28,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
 
   function displayTitle() {
-    workTitle.innerHTML = "<p>" + `${data[0].title}` + "</p>";
-    playTitle.innerHTML = "<p>" + `${data[1].title}` + "</p>";
-    studyTitle.innerHTML = "<p>" + `${data[2].title}` + "</p>";
-    exerciseTitle.innerHTML = "<p>" + `${data[3].title}` + "</p>";
-    socialTitle.innerHTML = "<p>" + `${data[4].title}` + "</p>";
-    selfcareTitle.innerHTML = "<p>" + `${data[5].title}` + "</p>";
+    for (let i = 0; i < data.length; i++) {
+      titles[i].innerHTML = "<p>" + `${data[i].title}` + "</p>";
+    }
   }
   displayTitle();
 
